@@ -1,6 +1,7 @@
 # HoloMania - Sample Code
 
-HoloHack2021で作成したHololens 2 用音楽ゲーム「HoloMania」のサンプルコードです。
+HoloHack2021で作成したHololens 2 用音楽ゲーム「HoloMania」のサンプルコードです。  
+概要: https://tama-ud.hatenablog.com/entry/2021/03/16/170939
 
 
 ### Assets/Script 以下
@@ -14,8 +15,7 @@ Spawner.cs ... レーンと飛んでくるGameObjectを生成・管理するス�
 
 ### MRTK/Extensions/HandPhysicsService 以下
 
-JointKinematicBody.cs ... MRTKのスクリプトにOnTriggerEnterを追記したもの（衝突時のエフェクト表示用）
-
+JointKinematicBody.cs ... MRTKのスクリプトにOnTriggerEnterを追記したもの（衝突時のエフェクト表示用）　　
 
 
 
