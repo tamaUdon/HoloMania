@@ -1,24 +1,25 @@
 # HoloMania - Sample Code
+HoloHack2021 で作成したHololens 2 向け音楽ゲーム「HoloMania」のソースコード  
 
-HoloHack2021で作成したHololens 2 用音楽ゲーム「HoloMania」のサンプルコードです。  
-概要: https://tama-ud.hatenablog.com/entry/2021/03/16/170939
+### ゲーム概要
+画面奥から音楽に合わせて飛んでくる敵機をタッチして撃破します
 
+### ゲームプレイ中のようす
+<img width="300" alt="スクリーンショット 2023-11-19 5 08 56" src="https://github.com/tamaUdon/HoloMania/assets/47604161/f6420c4c-c47d-468a-a2d3-9ed44f3bb781">
 
-### 遊んでみた動画
-<blockquote class="twitter-tweet"><p lang="ja" dir="ltr">実際に遊んでみた動画はこちら👇 <a href="https://t.co/aEV8HW2W3X">pic.twitter.com/aEV8HW2W3X</a></p>&mdash; carima (@tama_ud) <a href="https://twitter.com/tama_ud/status/1371022773766660098?ref_src=twsrc%5Etfw">March 14, 2021</a></blockquote>
+<img width=" 300" alt="スクリーンショット 2023-11-19 5 13 07" src="https://github.com/tamaUdon/HoloMania/assets/47604161/f7468bac-4d21-4588-af19-79e02bc4df2b">
 
-### Assets/Script 以下
+### スクリプトの解説
+Assets/Script
 
-Cube.cs ... レーンに沿って飛んでくるGameObjectにアタッチするスクリプト
+- Cube.cs ... レーンに沿って飛んでくるGameObjectにアタッチするスクリプト
+- LaneAnimation.cs ... レーンを2色に光らせるスクリプト（DOTween使用）
+- Spawner.cs ... レーンと飛んでくるGameObjectを生成・管理するスクリプト
 
-LaneAnimation.cs ... レーンを2色に光らせるスクリプト（DOTween使用）
+MRTK/Extensions/HandPhysicsService 
 
-Spawner.cs ... レーンと飛んでくるGameObjectを生成・管理するスクリプト
+- JointKinematicBody.cs ... MRTKのスクリプトにOnTriggerEnterを追記したもの（衝突時のエフェクト表示用）　　
 
-
-### MRTK/Extensions/HandPhysicsService 以下
-
-JointKinematicBody.cs ... MRTKのスクリプトにOnTriggerEnterを追記したもの（衝突時のエフェクト表示用）　　
-
-
+### Appendix
+制作時のブログ: https://tama-ud.hatenablog.com/entry/2021/03/16/170939
 
